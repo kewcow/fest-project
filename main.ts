@@ -6,7 +6,8 @@ const handler = async (req: Request): Promise<any> => {
   const pathname = new URL(req.url).pathname;
   if (
     pathname === '/' || pathname === '/argentina' ||
-    pathname === '/bolivia' || pathname === '/brasil'
+    pathname === '/bolivia' || pathname === '/brasil' ||
+    pathname === '/fest'
   ) {
     return home();
   } else {
